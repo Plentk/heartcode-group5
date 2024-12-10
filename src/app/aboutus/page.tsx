@@ -28,6 +28,20 @@ export default function main() {
                     hi nice to meet you
                 </CardFooter>
             </Card>
+            <Card>
+                <CardHeader>
+                    <CardTitle>
+                        Hi my name is Teck Seng
+                    </CardTitle>
+                    <CardDescription>
+                        I am a group 5 heartcode mentee
+                        I like to play mobile games
+                    </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                    Nice to meet you
+                </CardFooter>
+            </Card>
         </div>
     )
 }
