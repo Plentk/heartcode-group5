@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -18,7 +18,7 @@ export default function Home() {
     <div>
       <div className="h-[20rem] flex justify-center items-center px-4">
       <div className="text-6xl mx-auto font-normal text-neutral-800 dark:text-neutral-800">
-        Don't 
+        Don{"'"}t 
         <FlipWords words={words} />
         drugs
       </div>
@@ -140,7 +140,7 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-        Thhhis... hic th-th-thishh... hic whaaat... hic whaaa... hic drugshhhh doooo... hic d-don't... hic d-don't... hic noooo... hic noooo... yawn... hic snore... hic... zzZzz...
+        Thhhis... hic th-th-thishh... hic whaaat... hic whaaa... hic drugshhhh doooo... hic d-don{"'"}t... hic d-don{"'"}t... hic noooo... hic noooo... yawn... hic snore... hic... zzZzz...
       
         </CardContent>
         <CardFooter>
