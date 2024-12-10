@@ -1,4 +1,4 @@
-# Heartcode Group 5
+# Project Heartcode Group 5
 
 A web app about raising drug awareness. [Deployed](https://heartcode-group5.vercel.app/) on Vercel.
 
