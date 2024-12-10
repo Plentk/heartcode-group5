@@ -14,11 +14,18 @@ import Link from "next/link"
 
 export function NavigationBar() {
     return (
-        <NavigationMenu className="flex justify-normal min-w-full list-none h-15 position: sticky top-0 p-5">
+        <NavigationMenu className="flex justify-normal min-w-full list-none h-15 position: sticky top-0 p-5 bg-red-50">
             <NavigationMenuItem className= "pr-2">
                 <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Home
+                    </NavigationMenuLink>
+                </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem className= "pr-2">
+                <Link href="/drugs" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        About Drugs
                     </NavigationMenuLink>
                 </Link>
             </NavigationMenuItem>

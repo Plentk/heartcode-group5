@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -12,7 +11,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 
 export default function Home() {
-  const words = [" start"," continue"," do"," consider"," think about"," consider taking"," buy"];
+  const words = [" start"," continue"," do"," consider"," think about"," consider taking"," buy", " possess"];
   return (
     
     <div>
