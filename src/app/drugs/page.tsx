@@ -12,7 +12,7 @@ export default function main() {
                     What are drugs?
                 </div>
                 <div><Image src={DrunkDog1} width={600} alt="drunkdog" unoptimized /></div>
-                <p className= "p-5">Drugs are a category of substances that affect or change a person's physical condition. Most drugs when consumed causes one to become addicted to them, causing worsening of mental state until one cannot live without frequent consumption.</p>
+                <p className= "p-5">Drugs are a category of substances that affect or change a person{"'"}s physical condition. Most drugs when consumed causes one to become addicted to them, causing worsening of mental state until one cannot live without frequent consumption.</p>
             </div>
             <div className="flex flex-col items-center p-6">
                 <div className="font-bold text-4xl py-4">
