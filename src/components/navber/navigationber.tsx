@@ -1,12 +1,12 @@
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
+    // NavigationMenuContent,
+    // NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
+    // NavigationMenuList,
+    // NavigationMenuTrigger,
+    // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
