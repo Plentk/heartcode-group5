@@ -1,151 +1,61 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 
 export default function Home() {
-  const words = [" start"," continue"," do"," consider"," think about"," consider taking"," buy", " possess"];
+  const words = [" start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " procure", " produce"];
   return (
-    
-    <div>
-      <div className="h-[20rem] flex justify-center items-center px-4">
-      <div className="text-6xl mx-auto font-normal text-neutral-800 dark:text-neutral-800">
-        Don{"'"}t 
-        <FlipWords words={words} />
-        drugs
+
+    <div className="">
+      <div className="h-[20rem] md:h-[30rem] lg:h-[50rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')]">
+        <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-100">
+          Don{"'"}t
+          <FlipWords words={words} className="text-5xl md:text-7xl lg:text-9xl mx-auto font-semibold text-rose-50 z-0" />
+          drugs
+        </div>
       </div>
-    </div>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Pls dont do drugs
-          </CardTitle>
-          <CardDescription>
-            <p>drugs are bad, just bad</p>
-            drugs are bad, just bad
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          Yes they are bad why you still thinking
-        </CardContent>
-        <CardFooter>
-          drugs = bad
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Pls pls dont do drugs
-          </CardTitle>
-          <CardDescription>
-            <p>drugs are very bad, very bad</p>
-            drugs are very bad, just bad
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          Yes they ARE bad why you still thinking of taking drugs
-        </CardContent>
-        <CardFooter>
-          drugs {'>'}= very bad
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Alcohol
-          </CardTitle>
-          <CardDescription>
-            Alcohol (Ethanol) is C2H5OH
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          Alcohol makes one high. High people does weird stuff
-          (Only ethanol can be consumed. Pls do not consume other alcohols)
-        </CardContent>
-        <CardFooter>
-          not drugs (i think?)
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Coffee
-          </CardTitle>
-          <CardDescription>
-            Coffee contains caffeine
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          Coffee increases energy, pushing back sleeping time. May get addicted
-        </CardContent>
-        <CardFooter>
-          causes problems
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Drrrruuuugggssss
-          </CardTitle>
-          <CardDescription>
-            high
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          oll34
-        </CardContent>
-        <CardFooter>
-          <CardTitle>
-            Drugs
-          </CardTitle>
-          <CardDescription>
-            help i am being held hostage pls save me 
-          </CardDescription>
-        </CardFooter>
-      </Card>
-      <Card className="bg-zinc-500">
-        hi
-        <CardHeader>
-          hi
-          <CardTitle>
-            hibbjjb
-          </CardTitle>
-          <CardDescription>
-            hi
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          ghvhhggj
-      
-        </CardContent>
-        <CardFooter>
-          iijvhv
-        </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>
-          ☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️
-          </CardTitle>
-          <CardDescription>
-            
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-        Thhhis... hic th-th-thishh... hic whaaat... hic whaaa... hic drugshhhh doooo... hic d-don{"'"}t... hic d-don{"'"}t... hic noooo... hic noooo... yawn... hic snore... hic... zzZzz...
-      
-        </CardContent>
-        <CardFooter>
-          iijvhvekekepp3rp3le;dl;lsdwddewodjjdwojdjwd
-        </CardFooter>
-      </Card>
+      <div className="flex flex-col items-center p-6">
+        <div className="font-bold text-3xl pt-6 px-10">
+          FAQ
+        </div>
+      </div>
+      <div className="flex flex-col items-center px-10">
+        <div className="w-11/12 md:max-w-screen-sm lg:max-w-screen-lg">
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="font-semibold text-xl pt-6">Why are drugs bad?</AccordionTrigger>
+              <AccordionContent>
+                Consumed drugs affect physical & mental health. Prolonged consumption of drugs makes one dependent on substance, affecting relationships & finances.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="font-semibold text-xl pt-6">Why do people take drugs if it is so bad?</AccordionTrigger>
+              <AccordionContent>
+                People start taking drugs for a variety of reasons, including peer pressure, accumulated stress and curiosity.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="font-semibold text-xl pt-6">How can I tell if someone is abusing drugs?</AccordionTrigger>
+              <AccordionContent>
+                Physical Signs: Concealment of eyes, Frequent extreme mood swings, <br /> Behavioural Signs: Behavioural changes, Acting defensively if confronted about drug abuse, general lack of energy, Borrowing money for weird reasons, Frequently absent
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="font-semibold text-xl pt-6">What to do if witnessing someone consuming drugs?</AccordionTrigger>
+              <AccordionContent>
+                Stay calm and reasonable when confronting the person. Consult a trusted adult on dealing with the person. Do not stay quiet.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+      <div className="py-10"/>
     </div>
   );
 }
