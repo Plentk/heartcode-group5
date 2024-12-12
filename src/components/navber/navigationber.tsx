@@ -89,7 +89,7 @@ export function NavigationBar() {
                     </SignedOut>
                     <SignedIn>
                         <Card className="outline outline-0 hover:outline-1 outline-offset-1 justify-items-end flex flex-col items-center">
-                            <UserButton appearance={{baseTheme: currentTheme.theme === "dark" ? shadesOfPurple : "", }}/>
+                            <UserButton appearance={{baseTheme: currentTheme.theme === "dark" ? shadesOfPurple : undefined }}/>
                         </Card>
                     </SignedIn>
                 </NavigationMenuList>
