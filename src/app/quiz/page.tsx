@@ -17,13 +17,14 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+
 import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
     nam: z.string().min(2, {
         message: "Name must be at least 2 characters.",
     }).max(50, { message: "Name cannot exceed 50 characters.", }),
-    email: z.string().email({ message: "Please enter a valid email" }),
+    ans_2: z.enum(["a", "b", "c", "d", "e"], { message: "This question is required" }),
     ans_3: z.enum(["a", "b", "c", "d", "e"], { message: "This question is required" }),
     ans_4: z.enum(["a", "b", "c", "d", "e"], { message: "This question is required" }),
     ans_5: z.enum(["a", "b", "c", "d", "e"], { message: "This question is required" }),
@@ -41,7 +42,6 @@ export default function main() {
         resolver: zodResolver(formSchema),
         defaultValues: {
             nam: "",
-            email: "",
 
         },
     })
@@ -51,6 +51,7 @@ export default function main() {
 
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
+        if (values.ans_2 === "e") { score += 1 }
         if (values.ans_3 === "d") { score += 1 }
         if (values.ans_4 === "d") { score += 1 }
         if (values.ans_5 === "a") { score += 1 }
@@ -67,7 +68,7 @@ export default function main() {
         } else {
             toast({
                 title: `Do better, ${values.nam}`,
-                description: `Your score is ${score}/7. Answers are found on this website.`
+                description: `Your score is ${score}/8. Answers are found on this website.`
             })
         }
     }
@@ -96,15 +97,60 @@ export default function main() {
                         />
                         <FormField
                             control={form.control}
-                            name="email"
+                            name="ans_2"
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel className="text-base mx-auto font-semibold">Question 2</FormLabel>
                                     <FormDescription className="text-small mx-auto text-neutral 900">
-                                        Enter your email
+                                        Which of the following drugs is it legal for someone born on 12 August 2006 to possess on 11 August 2024?
                                     </FormDescription>
                                     <FormControl>
-                                        <Input placeholder="your_email@domain.com" {...field} />
+                                        <RadioGroup
+                                            onValueChange={field.onChange}
+                                            defaultValue={field.value}
+                                            className="flex flex-col space-y-1"
+                                        >
+                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                                <FormControl>
+                                                    <RadioGroupItem value="a" />
+                                                </FormControl>
+                                                <FormLabel className="font-normal">
+                                                    Alcohol
+                                                </FormLabel>
+                                            </FormItem>
+                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                                <FormControl>
+                                                    <RadioGroupItem value="e" />
+                                                </FormControl>
+                                                <FormLabel className="font-normal">
+                                                    Caffeine
+                                                </FormLabel>
+                                            </FormItem>
+                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                                <FormControl>
+                                                    <RadioGroupItem value="b" />
+                                                </FormControl>
+                                                <FormLabel className="font-normal">
+                                                    Heroin
+                                                </FormLabel>
+                                            </FormItem>
+                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                                <FormControl>
+                                                    <RadioGroupItem value="d" />
+                                                </FormControl>
+                                                <FormLabel className="font-normal">
+                                                    Methamphetamine
+                                                </FormLabel>
+                                            </FormItem>
+                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                                <FormControl>
+                                                    <RadioGroupItem value="c" />
+                                                </FormControl>
+                                                <FormLabel className="font-normal">
+                                                    Tobacco
+                                                </FormLabel>
+                                            </FormItem>
+                                        </RadioGroup>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -117,7 +163,7 @@ export default function main() {
                                 <FormItem>
                                     <FormLabel className="text-base mx-auto font-semibold">Question 3</FormLabel>
                                     <FormDescription className="text-small mx-auto text-neutral 900">
-                                        Which of the following options best describes what drugs does? Drugs ________.
+                                        Which of the following options <a className="underline font-bold">best</a> describes what drugs does? Drugs ________.
                                     </FormDescription>
                                     <FormControl>
                                         <RadioGroup
@@ -361,7 +407,7 @@ export default function main() {
                                 <FormItem>
                                     <FormLabel className="text-base mx-auto font-semibold">Question 7</FormLabel>
                                     <FormDescription className="text-small mx-auto text-neutral 900">
-                                        Which of the following is not a possible cause of taking drugs?
+                                        Which of the following is <a className="underline font-bold">not</a> a possible cause of taking drugs?
                                     </FormDescription>
                                     <FormControl>
                                         <RadioGroup
@@ -422,7 +468,7 @@ export default function main() {
                                 <FormItem>
                                     <FormLabel className="text-base mx-auto font-semibold">Question 8</FormLabel>
                                     <FormDescription className="text-small mx-auto text-neutral 900">
-                                        Which of the following is not what should be done if witnessing someone taking drugs? Assume none of the actions are taken in combination.
+                                        Which of the following is <a className="underline font-bold">not</a> what should be done if witnessing someone taking drugs? Assume none of the actions are taken in combination.
                                     </FormDescription>
                                     <FormControl>
                                         <RadioGroup
@@ -483,7 +529,7 @@ export default function main() {
                                 <FormItem>
                                     <FormLabel className="text-base mx-auto font-semibold">Question 9</FormLabel>
                                     <FormDescription className="text-small mx-auto text-neutral 900">
-                                        Which of the following is not a possible consequence of drug abuse?
+                                        Which of the following is <a className="underline font-bold">not</a> a possible consequence of drug abuse?
                                     </FormDescription>
                                     <FormControl>
                                         <RadioGroup

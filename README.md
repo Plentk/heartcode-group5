@@ -1,6 +1,6 @@
 # Heartcode Group 5
 
-A web app about raising drug awareness. [Deployed](https://heartcode-group5.vercel.app/) on Vercel.
+A web app about raising drug awareness. [Deployed](https://heartcodegroup5drugs.vercel.app/) on Vercel.
 
 The app was made when learning how to build a [Next.js](https://nextjs.org/) and [shadcn](https://ui.shadcn.com/) web app and deploy on [Vercel](https://vercel.com/) during [Project Heartcode](https://heartcode.scis.smu.edu.sg/) 2024.
 

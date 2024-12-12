@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DrunkDog1 from "@/app/assets/drunk_dog1.jpg"
+import GoodDog1 from "@/app/assets/gooddog1.webp"
 import Alcohol from "@/app/assets/alcohol.jpg"
 import Caffeine from "@/app/assets/caffeine.webp"
 import Cocaine from "@/app/assets/cocaine.jpg"
@@ -27,7 +28,7 @@ export default function main() {
     return (
         <div>
             <div className="flex flex-col items-center p-6">
-                <div className="font-bold text-5xl py-4">
+                <div className="font-bold text-5xl py-4 hover:py-3 hover:text-6xl hover:underline">
                     What are drugs?
                 </div>
                 <div><Image src={DrunkDog1} width={600} alt="drunkdog" unoptimized /></div>
@@ -140,6 +141,14 @@ export default function main() {
                     <CarouselNext />
                 </Carousel>
             </div>
+            <div className="flex flex-col items-center p-6">
+                
+                <div><Image src={GoodDog1} width={600} alt="gooddog" unoptimized /></div>
+                <p className="p-2 italic md:max-w-screen-sm lg:max-w-screen-lg">Max the dog if it knew what drugs are before considering to consume drugs. Don{"'"}t do drugs.</p>
+                <p className="p-5 md:max-w-screen-sm lg:max-w-screen-lg">Drugs may have initial benefits, but the long term drawbacks hugely outweigh them. Never think about consuming drugs.</p>
+            </div>
+            <div className="font-bold text-5xl py-4">
+                </div>
         </div>
     )
 }
