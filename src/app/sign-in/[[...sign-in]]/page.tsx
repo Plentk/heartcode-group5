@@ -8,7 +8,7 @@ export default function Page() {
     return (
         <div className="flex flex-col items-center">
             <div className="py-10">
-                <SignIn appearance={{ baseTheme: currentTheme.theme === "dark" ? shadesOfPurple : "", }}/>
+                <SignIn appearance={{ baseTheme: currentTheme.theme === "dark" ? shadesOfPurple : null }}/>
             </div>
         </div>
     )
