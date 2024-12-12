@@ -9,7 +9,7 @@ import {
 
 
 export default function Home() {
-  const words = [" start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " procure", " produce"];
+  const words = [" start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " start", " continue", " do", " think about", " sell", " consider taking", " buy", " consume", " abuse", " possess", " procure", " produce"];
   return (
 
     <div className="">
@@ -27,11 +27,11 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center px-10">
         <div className="w-11/12 md:max-w-screen-sm lg:max-w-screen-lg">
-          <Accordion type="single" collapsible>
+          <Accordion type="multiple">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-semibold text-xl pt-6">Why are drugs bad?</AccordionTrigger>
               <AccordionContent>
-                Consumed drugs affect physical & mental health. Prolonged consumption of drugs makes one dependent on substance, affecting relationships & finances.
+                Consumed drugs affect physical & mental health negatively. Prolonged consumption of drugs makes one dependent on substance, affecting relationships & finances.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
