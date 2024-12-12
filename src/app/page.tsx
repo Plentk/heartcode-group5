@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { YouTubeEmbed } from '@next/third-parties/google'
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
 
     <div className="">
       <div className="h-[20rem] md:h-[30rem] lg:h-[50rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')]">
-        <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-100">
+        <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-50">
           Don{"'"}t
           <FlipWords words={words} className="text-5xl md:text-7xl lg:text-9xl mx-auto font-semibold text-rose-50 z-0" />
           drugs
@@ -22,7 +23,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center p-6">
         <div className="font-bold text-3xl pt-6 px-10">
-          FAQ
+          Frequently Asked Questions about Drug Abuse
         </div>
       </div>
       <div className="flex flex-col items-center px-10">
@@ -52,10 +53,42 @@ export default function Home() {
                 Stay calm and reasonable when confronting the person. Consult a trusted adult on dealing with the person. Do not stay quiet.
               </AccordionContent>
             </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="font-semibold text-xl pt-6">Can you show me a video of someone taking drugs?</AccordionTrigger>
+              <AccordionContent>
+                No.<br />Showing someone taking drugs condones this kind of behaviour. Instead, here is a video demonstrating the consequences of taking drugs.
+                <div className="py-2" />
+                <div className="flex flex-col items-center">
+                  <div className="py-10 w-2/3">
+                    <YouTubeEmbed videoid="HUngLgGRJpo" params="controls=0 cc_lang_pref=en cc_load_policy=1 hl=en rel=0" />
+                  </div>
+                </div>
+                <Accordion type="multiple">
+                  <AccordionItem value="item-11">
+                    <AccordionTrigger className="font-medium text-lg pt-6">Moral of the Story</AccordionTrigger>
+                    <AccordionContent>
+                      Drugs are addictive. Don{"'"}t take drugs.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="font-semibold text-xl pt-6">What is Singapore doing to curb drug abuse?</AccordionTrigger>
+              <AccordionContent>
+                Spreading awareness of drug abuse in person, on social media and through events to warn people of the risks of drug abuse.<br/><br/>DrugFreeSG Advocacy Network Corporate Video
+                <div className="pt-0.5" />
+                <div className="flex flex-col items-center">
+                  <div className="py-10 w-2/3">
+                    <YouTubeEmbed videoid="VHQAAH-NNKc" params="controls=0 cc_lang_pref=en cc_load_policy=0 hl=en rel=0" />
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </div>
-      <div className="py-10"/>
+      <div className="py-10" />
     </div>
   );
 }

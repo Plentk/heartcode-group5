@@ -36,7 +36,7 @@ const formSchema = z.object({
 
 export default function main() {
     const { toast } = useToast();
-    let score = 0
+    let score = 1
     // 1. Define your form.
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -63,12 +63,12 @@ export default function main() {
         if (score > 5) {
             toast({
                 title: `Congratulations ${values.nam}`,
-                description: `Your score is ${score}/7. You are an expert in dealing with drug addiction!`
+                description: `Your score is ${score}/9. You are an expert in dealing with drug addiction!`
             })
         } else {
             toast({
                 title: `Do better, ${values.nam}`,
-                description: `Your score is ${score}/8. Answers are found on this website.`
+                description: `Your score is ${score}/9. Answers are found on this website.`
             })
         }
     }

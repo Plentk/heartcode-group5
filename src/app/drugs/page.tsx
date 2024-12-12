@@ -144,7 +144,7 @@ export default function main() {
             <div className="flex flex-col items-center p-6">
                 
                 <div><Image src={GoodDog1} width={600} alt="gooddog" unoptimized /></div>
-                <p className="p-2 italic md:max-w-screen-sm lg:max-w-screen-lg">Max the dog if it knew what drugs are before considering to consume drugs. Don{"'"}t do drugs.</p>
+                <p className="p-2 italic md:max-w-screen-sm lg:max-w-screen-lg">Max the dog if it knew what drugs are before considering to consume drugs. I know you could do it, Max!</p>
                 <p className="p-5 md:max-w-screen-sm lg:max-w-screen-lg">Drugs may have initial benefits, but the long term drawbacks hugely outweigh them. Never think about consuming drugs.</p>
             </div>
             <div className="font-bold text-5xl py-4">
