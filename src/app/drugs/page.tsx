@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function main() {
     return (
-        <div>
+        <div className = "bg-gradient-to-tr from-cyan-200 to-slate-200 dark:from-slate-950 dark:to-blue-950 pt-20">
             <div className="flex flex-col items-center p-6">
                 <div className="font-bold text-5xl py-4 hover:py-3 hover:text-6xl hover:underline">
                     What are drugs?

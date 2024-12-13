@@ -38,7 +38,7 @@ import { shadesOfPurple } from '@clerk/themes'
 export function NavigationBar() {
     const currentTheme = useTheme()
     return (
-        <NavigationMenu className="sticky top-0 list-noneflex justify-between min-w-full list-none h-15 position: p-5 bg-red-100/75 dark:bg-rose-900/50">
+        <NavigationMenu className="sticky top-0 list-noneflex justify-between min-w-full list-none h-15 position: p-5 bg-red-100/75 dark:bg-rose-900/50 -mt-20">
             <NavigationMenuList>
                 <div className="flex flex-row">
                     <NavigationMenuItem>

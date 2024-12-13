@@ -8,6 +8,14 @@ import {
 } from "@/components/ui/accordion"
 import { YouTubeEmbed } from '@next/third-parties/google'
 import type { Metadata } from "next";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export const metadata: Metadata = {
   title: "No Drugs pls | Homepage",
@@ -18,8 +26,8 @@ export default function Home() {
   const words = [" start", " continue", " do", " think about", " consider taking", " buy", " consume", " abuse", " possess", " start", " continue", " do", " think about", " sell", " turn up with", " consider taking", " buy", " consume", " abuse", " possess", " procure", " produce", " become"];
   return (
 
-    <div className="">
-      <div className="h-[20rem] md:h-[30rem] lg:h-[55rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')] py-20 -mt-20">
+    <div className="bg-gradient-to-bl from-red-200 to-slate-200 dark:from-slate-950 dark:to-rose-950">
+      <div className="h-[20rem] md:h-[30rem] lg:h-[55rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')] py-20">
         <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-50 pt-10">
           Don{"'"}t
           <FlipWords words={words} className="text-5xl md:text-7xl lg:text-9xl mx-auto font-semibold text-rose-50 z-0" />
@@ -33,76 +41,78 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center px-10">
         <div className="w-11/12 md:max-w-screen-sm lg:max-w-screen-lg">
-          <Accordion type="multiple">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="font-semibold text-xl pt-6">Why are drugs bad?</AccordionTrigger>
-              <AccordionContent>
-                Consumed drugs affect physical & mental health negatively. Prolonged consumption of drugs makes one dependent on substance, affecting relationships & finances.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="font-semibold text-xl pt-6">Why do people take drugs if it is so bad?</AccordionTrigger>
-              <AccordionContent>
-                People start taking drugs for a variety of reasons, including peer pressure, accumulated stress and curiosity.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-8">
-              <AccordionTrigger className="font-semibold text-xl pt-6">What is drug abuse?</AccordionTrigger>
-              <AccordionContent>
-                Drug abuse is consistently taking drugs over a prolonged period of time, eventually developing a dependence on them and being unable to live without regular consumption.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="font-semibold text-xl pt-6">How can I tell if someone is abusing drugs?</AccordionTrigger>
-              <AccordionContent>
-                Physical Signs: Concealment of eyes, Frequent extreme mood swings, <br /> Behavioural Signs: Behavioural changes, Acting defensively if confronted about drug abuse, general lack of energy, Borrowing money for weird reasons, Frequently absent
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger className="font-semibold text-xl pt-6">What to do if witnessing someone consuming drugs?</AccordionTrigger>
-              <AccordionContent>
-                Stay calm and reasonable when confronting the person. Consult a trusted adult on dealing with the person. Do not stay quiet.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5">
-              <AccordionTrigger className="font-semibold text-xl pt-6">Can you show me a video of someone taking drugs?</AccordionTrigger>
-              <AccordionContent>
-                No.<br />Showing someone taking drugs condones this kind of behaviour. Instead, here is a video demonstrating the consequences of taking drugs.
-                <div className="py-2" />
-                <div className="flex flex-col items-center">
-                  <div className="py-10 w-2/3">
-                    <YouTubeEmbed videoid="HUngLgGRJpo" params="controls=0 cc_lang_pref=en cc_load_policy=1 hl=en rel=0" />
+          <Card className="bg-white/50 dark:bg-black/50 p-3">
+            <Accordion type="multiple">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="font-semibold text-xl pt-6">Why are drugs bad?</AccordionTrigger>
+                <AccordionContent>
+                  Consumed drugs affect physical & mental health negatively. Prolonged consumption of drugs makes one dependent on substance, affecting relationships & finances.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="font-semibold text-xl pt-6">Why do people take drugs if it is so bad?</AccordionTrigger>
+                <AccordionContent>
+                  People start taking drugs for a variety of reasons, including peer pressure, accumulated stress and curiosity.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger className="font-semibold text-xl pt-6">What is drug abuse?</AccordionTrigger>
+                <AccordionContent>
+                  Drug abuse is consistently taking drugs over a prolonged period of time, eventually developing a dependence on them and being unable to live without regular consumption.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="font-semibold text-xl pt-6">How can I tell if someone is abusing drugs?</AccordionTrigger>
+                <AccordionContent>
+                  Physical Signs: Concealment of eyes, Frequent extreme mood swings, <br /> Behavioural Signs: Behavioural changes, Acting defensively if confronted about drug abuse, general lack of energy, Borrowing money for weird reasons, Frequently absent
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="font-semibold text-xl pt-6">What to do if witnessing someone consuming drugs?</AccordionTrigger>
+                <AccordionContent>
+                  Stay calm and reasonable when confronting the person. Consult a trusted adult on dealing with the person. Do not stay quiet.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="font-semibold text-xl pt-6">Can you show me a video of someone taking drugs?</AccordionTrigger>
+                <AccordionContent>
+                  No.<br />Showing someone taking drugs condones this kind of behaviour. Instead, here is a video demonstrating the consequences of taking drugs.
+                  <div className="py-2" />
+                  <div className="flex flex-col items-center">
+                    <div className="py-10 w-2/3">
+                      <YouTubeEmbed videoid="HUngLgGRJpo" params="controls=0 cc_lang_pref=en cc_load_policy=1 hl=en rel=0" />
+                    </div>
                   </div>
-                </div>
-                <Accordion type="multiple">
-                  <AccordionItem value="item-11">
-                    <AccordionTrigger className="font-medium text-lg pt-6">Moral of the Story</AccordionTrigger>
-                    <AccordionContent>
-                      Drugs are addictive. Don{"'"}t take drugs. Drugs are addictive. Drugs make people old. etc.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-6">
-              <AccordionTrigger className="font-semibold text-xl pt-6">What is Singapore doing to curb drug abuse?</AccordionTrigger>
-              <AccordionContent>
-                Spreading awareness of drug abuse in person, on social media and through events to warn people of the risks of drug abuse.<br /><br />DrugFreeSG Advocacy Network Corporate Video
-                <div className="pt-0.5" />
-                <div className="flex flex-col items-center">
-                  <div className="py-10 w-2/3">
-                    <YouTubeEmbed videoid="VHQAAH-NNKc" params="controls=0 cc_lang_pref=en cc_load_policy=0 hl=en rel=0" />
+                  <Accordion type="multiple">
+                    <AccordionItem value="item-11">
+                      <AccordionTrigger className="font-medium text-lg pt-6">Moral of the Story</AccordionTrigger>
+                      <AccordionContent>
+                        Drugs are addictive. Don{"'"}t take drugs. Drugs are addictive. Drugs make people old. etc.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="font-semibold text-xl pt-6">What is Singapore doing to curb drug abuse?</AccordionTrigger>
+                <AccordionContent>
+                  Spreading awareness of drug abuse in person, on social media and through events to warn people of the risks of drug abuse.<br /><br />DrugFreeSG Advocacy Network Corporate Video
+                  <div className="pt-0.5" />
+                  <div className="flex flex-col items-center">
+                    <div className="py-10 w-2/3">
+                      <YouTubeEmbed videoid="VHQAAH-NNKc" params="controls=0 cc_lang_pref=en cc_load_policy=0 hl=en rel=0" />
+                    </div>
                   </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="font-semibold text-xl pt-6">I was offered powdery substances by a stranger. Should I take it?</AccordionTrigger>
-              <AccordionContent>
-                No. It is most likely a drug.<br />Do not under any circumstances take or consume substances whose origins are unknown.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger className="font-semibold text-xl pt-6">I was offered powdery substances by a stranger. Should I take it?</AccordionTrigger>
+                <AccordionContent>
+                  No. It is most likely a drug.<br />Do not under any circumstances take or consume substances whose origins are unknown.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </Card>
         </div>
       </div>
       <div className="py-10" />
