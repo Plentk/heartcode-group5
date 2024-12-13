@@ -2,7 +2,7 @@
 
 A web app about raising drug awareness. [Deployed](https://heartcodegroup5drugs.vercel.app/) on Vercel.
 
-The app was made when learning how to build a [Next.js](https://nextjs.org/) and [shadcn](https://ui.shadcn.com/) web app and deploy on [Vercel](https://vercel.com/) during [Project Heartcode](https://heartcode.scis.smu.edu.sg/) 2024.
+The app was made when learning how to build a [Next.js](https://nextjs.org/) and [shadcn](https://ui.shadcn.com/) web app and deploy on [Vercel](https://vercel.com/) during [Project Heartcode](https://heartcode.scis.smu.edu.sg/) 2024 from 9 December to 13 December.
 
 ## Setup
 ### Prerequisites:
