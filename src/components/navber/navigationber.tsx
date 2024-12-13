@@ -42,10 +42,10 @@ export function NavigationBar() {
             <NavigationMenuList>
                 <div className="flex flex-row">
                     <NavigationMenuItem>
-                        <Card className="outline outline-0 hover:outline-1 outline-offset-1 hover:underline decoration-double bg-white dark:bg-black">
+                        <Card className="outline outline-0 hover:outline-1 outline-offset-1 hover:underline decoration-double bg-transparent">
                             <Link href="/" legacyBehavior passHref>
                                 <NavigationMenuLink>
-                                    <Image src={AntiProh} height={35} alt="AntiProh" unoptimized className="outline outline-0 hover:outline-1 outline-offset-1 justify-items-end flex flex-col items-center" />
+                                    <Image src={AntiProh} height={35} alt="AntiProh" unoptimized className="hover:outline-1 outline-offset-1 justify-items-end flex flex-col items-center" />
                                 </NavigationMenuLink>
                             </Link>
                         </Card>

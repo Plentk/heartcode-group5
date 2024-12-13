@@ -51,8 +51,8 @@ export default function main() {
                     opts={{
                         align: "start",
                         loop: true,
-                    }} className="w-full md:max-w-screen-sm lg:max-w-screen-lg">
-                    <CarouselContent>
+                    }} className="w-full md:max-w-screen-sm lg:max-w-screen-lg pb-5">
+                    <CarouselContent className="flex flex-row">
                         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                             <Card className="p-1 bg-yellow-300/90 dark:bg-yellow-900/75">
                                 <CardHeader className="font-bold text-2xl">
@@ -62,7 +62,7 @@ export default function main() {
                                     <Image src={Alcohol} width={400} alt="Alcohol" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Only Ethanol can be consumed, diluted to between 2% to 50%. Depressant that in low doses induces euphoria, reduces anxiety and increases sociability. Higher doses causes drunkenness, unconsciousness or death. Long term use increases risk of cancer and addiction. <br /><br /> Illegal for minors (aged 18 and below) to buy alcohol.</p>
+                                    <p className="py-5">Only Ethanol can be consumed, diluted to between 2% to 50%. Depressant that in low doses induces euphoria, reduces anxiety and increases sociability. Higher doses causes drunkenness, unconsciousness or death. Long term use increases risk of cancer and addiction. <br /><br /> Illegal for minors (aged 18 and below) to buy alcohol.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -75,7 +75,7 @@ export default function main() {
                                     <Image src={Caffeine} width={400} alt="Caffeine" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5"> Contained in coffee and tea. Improved memory, mood, energy levels and risk of cognitive diseases, but increases anxiety and disrupts sleeping patterns.<br /><br /> Excess consumption by minors is harmful to their health.</p>
+                                    <p className="py-5"> Contained in coffee and tea. Improved memory, mood, energy levels and risk of cognitive diseases, but increases anxiety and disrupts sleeping patterns.<br /><br /> Excess consumption by minors is harmful to their health.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -88,7 +88,7 @@ export default function main() {
                                     <Image src={Cannabis} width={400} alt="Cannabis" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Also known as Marijuana. Consumption impairs short-term memory, motor skills. Prolonged consumption alters brain development, reduces intelligence. <br /><br /> Possession is punishable by law. Up to 30 years of imprisonment, 15 strokes of the cane or fine of $20000 depending on severity of offence.</p>
+                                    <p className="py-5">Also known as Marijuana. Consumption impairs short-term memory, motor skills. Prolonged consumption alters brain development, reduces intelligence. <br /><br /> Possession is punishable by law. Up to 30 years of imprisonment, 15 strokes of the cane or fine of $20000 depending on severity of offence.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -101,7 +101,7 @@ export default function main() {
                                     <Image src={Cocaine} width={400} alt="Cocaine" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Also known as Crack. Consumption increases heart rate, makes one aggresive, irritable. Causes nausea, blurred vision & hallucination. <br /><br /> Possession is punishable by law. Up to life imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
+                                    <p className="py-5">Also known as Crack. Consumption increases heart rate, makes one aggresive, irritable. Causes nausea, blurred vision & hallucination. <br /><br /> Possession is punishable by law. Up to life imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -114,7 +114,7 @@ export default function main() {
                                     <Image src={Heroin} width={400} alt="Heroin" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Consumption lowers heart rate, respiration and concentration, damaging lungs, kidney and liver. Makes one dull, tired and constipated. <br /> <br /> Possession is punishable by law. Up to life imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
+                                    <p className="py-5">Consumption lowers heart rate, respiration and concentration, damaging lungs, kidney and liver. Makes one dull, tired and constipated. <br /> <br /> Possession is punishable by law. Up to life imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -127,7 +127,7 @@ export default function main() {
                                     <Image src={Meth} width={400} alt="Meth" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Also known as Ice. Consumption permanently damages blood vessels of vital organs. Sniffing damages nose tissues. Partaking causes malnutrition, weight loss and severe tooth decay. <br /><br /> Possession is punishable by law. Up to 30 years of imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
+                                    <p className="py-5">Also known as Ice. Consumption permanently damages blood vessels of vital organs. Sniffing damages nose tissues. Partaking causes malnutrition, weight loss and severe tooth decay. <br /><br /> Possession is punishable by law. Up to 30 years of imprisonment, 15 strokes of the cane, fine of $20,000 or death penalty depending on severity of offence.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -140,7 +140,7 @@ export default function main() {
                                     <Image src={Tobacco} width={400} alt="Tobacco" unoptimized />
                                 </CardContent>
                                 <CardContent>
-                                    <p className="p-5">Contained in cigarettes and cigars, contains nicotine. Linked to heart disease, cancer, diabetes and chronic respiratory diseases. Second hand smoke affects those in vicinity of smoker.<br /><br /> Sale of cigarettes to those below 21 years old is illegal. Sale of all other tobacco products is illegal.</p>
+                                    <p className="py-5">Contained in cigarettes and cigars, contains nicotine. Linked to heart disease, cancer, diabetes and chronic respiratory diseases. Second hand smoke affects those in vicinity of smoker.<br /><br /> Sale of cigarettes to those below 21 years old is illegal. Sale of all other tobacco products is illegal.</p>
                                 </CardContent>
                             </Card>
                         </CarouselItem>
@@ -148,11 +148,11 @@ export default function main() {
                     <CarouselPrevious />
                     <CarouselNext />
                 </Carousel>
-                <p className="px-5 md:max-w-screen-sm lg:max-w-screen-lg">Drugs are coloured by how risky they are to possess, from <span className="py-1 bg-red-300/90 dark:bg-rose-900/75 font-bold">red</span> being illegal to possess to <span className="py-1 bg-lime-300/90 dark:bg-lime-900/75 font-bold">lime</span> being completely legal to consume.</p>
+                <p className="px-5 md:max-w-screen-sm lg:max-w-screen-lg">Drugs are coloured by how risky they are to possess, from <span className="py-1 bg-red-300/90 dark:bg-rose-900/75 font-bold">red</span> being illegal to possess to <span className="py-1 bg-lime-300/90 dark:bg-lime-900/75 font-bold">lime</span> being completely legal to consume.<br/><br/>Information for drugs in red taken from CNB website.<br/>Not all drugs shown here.</p>
             </div>
             <div className="flex flex-col items-center p-6">
                 <div><Image src={GoodDog1} width={600} alt="gooddog" unoptimized /></div>
-                <p className="p-2 italic md:max-w-screen-sm lg:max-w-screen-lg">Max the dog if it knew what drugs are before considering to consume drugs. I know you could do it, Max!</p>
+                <p className="p-2 italic md:max-w-screen-sm lg:max-w-screen-lg">Max the dog if it knew what drugs are before considering to consume drugs. I knew that you could do it, Max!</p>
                 <p className="p-5 md:max-w-screen-sm lg:max-w-screen-lg">Drugs may have initial benefits, but the long term drawbacks hugely outweigh them. Never think about consuming drugs.</p>
             </div>
         </div>

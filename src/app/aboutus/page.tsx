@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
 export default function main() {
     return (
-        <div className="flex flex-col items-center py-5">
+        <div className="flex flex-col items-center pt-10">
             <div className="w-full md:max-w-screen-sm lg:max-w-screen-lg">
                 About us😊
             </div>
-            <div className="py-2" />
+            <div className="py-0.5" />
             <div className="flex flex-row px-10 ">
                 <CardContainer className="inter-var max-w-sm">
                     <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">

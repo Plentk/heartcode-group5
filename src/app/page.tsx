@@ -19,8 +19,8 @@ export default function Home() {
   return (
 
     <div className="">
-      <div className="h-[20rem] md:h-[30rem] lg:h-[50rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')]">
-        <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-50">
+      <div className="h-[20rem] md:h-[30rem] lg:h-[55rem] flex justify-center items-center px-4 bg-no-repeat bg-cover bg-[url('/drugs2.jpg')] py-20 -mt-20">
+        <div className="text-5xl md:text-7xl lg:text-9xl mx-auto font-normal text-rose-50 pt-10">
           Don{"'"}t
           <FlipWords words={words} className="text-5xl md:text-7xl lg:text-9xl mx-auto font-semibold text-rose-50 z-0" />
           drugs
@@ -44,6 +44,12 @@ export default function Home() {
               <AccordionTrigger className="font-semibold text-xl pt-6">Why do people take drugs if it is so bad?</AccordionTrigger>
               <AccordionContent>
                 People start taking drugs for a variety of reasons, including peer pressure, accumulated stress and curiosity.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="font-semibold text-xl pt-6">What is drug abuse?</AccordionTrigger>
+              <AccordionContent>
+                Drug abuse is consistently taking drugs over a prolonged period of time, eventually developing a dependence on them and being unable to live without regular consumption.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -94,12 +100,6 @@ export default function Home() {
               <AccordionTrigger className="font-semibold text-xl pt-6">I was offered powdery substances by a stranger. Should I take it?</AccordionTrigger>
               <AccordionContent>
                 No. It is most likely a drug.<br />Do not under any circumstances take or consume substances whose origins are unknown.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-8">
-              <AccordionTrigger className="font-semibold text-xl pt-6">What is drug abuse?</AccordionTrigger>
-              <AccordionContent>
-                Drug abuse is consistently taking drugs over a prolonged period of time, eventually developing a dependence on them and being unable to live without regular consumption.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

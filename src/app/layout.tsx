@@ -37,7 +37,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
 
     <ClerkProvider>
@@ -52,7 +52,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavigationBar />
-            {children}
+            <div>
+              {children}
+            </div>
             <Toaster />
           </ThemeProvider>
         </body>
